@@ -1,0 +1,11 @@
+.newscontainer {
+  box-sizing: border-box;
+  padding: 40rpx;
+}
+
+.s-img {
+  width: 400rpx;
+  height: 400rpx;
+  background-color: #00ffff;
+  margin-top: 30rpx
+}

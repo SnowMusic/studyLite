@@ -1,0 +1,13 @@
+<view class="newscontainer">
+  <view class="page_bg">
+    <view class="section_gap" wx:for="{{marray}}" wx:for-item="mitem">
+      <view class="sectin-title">{{mitem.text}}</view>
+
+      <!--<view class="section-pic">-->
+
+      <image class="s-img" mode="{{mitem.mode}}" src="{{src}}"></image>
+
+      <!--</view>-->
+    </view>
+  </view>
+</view>

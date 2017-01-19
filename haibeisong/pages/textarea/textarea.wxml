@@ -1,0 +1,13 @@
+<template name="msgItem">
+  <image src="{{src}}" style="width=80%,height=400rpx"></image>
+  <text class="picdesc">{{desc}}</text>
+  <view wx:if="{{value}}">
+    ttttt
+  </view>
+</template>
+<view class="newstest" wx:for="{{array}}" wx:for-item="item">
+  <view bindtap="warn">
+    <template is="msgItem" data="{{...item}}"> </template>
+  </view>
+</view>
+

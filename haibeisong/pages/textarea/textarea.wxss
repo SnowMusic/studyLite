@@ -1,0 +1,16 @@
+/* pages/textarea/textarea.wxss */
+
+.msgItem {
+  margin-top: 80rpx;
+  background-color: #eee;
+}
+
+.picdesc {
+  font-size: 20pt;
+}
+
+.uu {
+    width: 80%;
+    height: 100px;
+    background-color: yellow;
+}

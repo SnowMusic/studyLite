@@ -1,0 +1,16 @@
+<view class="song-container" >
+
+    <image class="cover" src="../../image/tongyang.jpg"></image>
+  
+  <view class="song-text-title">我要点歌</view>
+  <view class="song-text-desc">每天下午3:30，随着音乐躁起来吧! </view>
+  <view class="songInput">
+    <input placeholder-style="font-size:15px" placeholder="歌曲名" bindinput="songNameInput" focus="true" />
+  </view>
+  <view class="singerInput">
+    <input placeholder="歌手名" placeholder-style="font-size:15px" bindinput="singerNameInput" />
+  </view>
+  <view class="submitBtn">
+    <button plain="true" bindtap="bindSubmitTap">提交</button>
+  </view>
+</view>
