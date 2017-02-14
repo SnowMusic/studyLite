@@ -1,0 +1,13 @@
+<view class="page">
+  <image class="image"
+         wx:for="{{videos}}"
+         wx:for-item="video"
+         bindtap="onTap"
+         data-video-url="{{video.playUrl}}"
+         src="{{video.coverForFeed}}"/>
+
+  <video id="video"
+         class="video"
+         style="display: {{videoDisplay}}; top: {{coverTop}}px"
+         src="{{currentUrl}}"/>
+</view>

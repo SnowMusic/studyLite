@@ -1,0 +1,25 @@
+page {
+  background-color: #fbf9fe;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+}
+
+.page input {
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+}
+
+.page {
+  min-height: 100%;
+  flex: 1;
+  background-color: #fbf9fe;
+  font-size: 32rpx;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  overflow: hidden;
+}
