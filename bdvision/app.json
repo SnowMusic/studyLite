@@ -1,6 +1,6 @@
 {
   "pages": [
-      "page/bdvision/bdvision"
+    "page/bdvision/bdvision"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -8,7 +8,6 @@
     "navigationBarBackgroundColor": "#fbf9fe",
     "backgroundColor": "#fbf9fe"
   },
-
   "networkTimeout": {
     "request": 10000,
     "connectSocket": 10000,

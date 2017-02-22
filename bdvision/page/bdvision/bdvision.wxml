@@ -1,11 +1,17 @@
-<image class="banner" src="http://img.kanjian.com/group3/M00/0C/00/wKhkCVUMFbOAAuNvAAJQ6z3QxFE664.jpg"></image>
+<image class="banner" src="{{banner}}"></image>
 <view class="page">
-  <view class="img-poster">
-    <image src="/image/play.png" wx:for="{{videos}}" bindtap="onPlayTap" wx:for-item="video" data-video-url="{{video.playUrl}}" 
-     data-id="{{video.id}}"  class="play-icon"/>
-    <image class="image" wx:for="{{videos}}" wx:for-item="video" src="{{video.coverForFeed}}" />
+  <view class="img-poster" wx:for="{{videos}}" wx:fox-index="index" wx:for-item="video">
+    <view>
+      <image src="/image/play.png" mode="aspectFit" bindtap="onPlayTap" data-video-url="{{video.videourl}}" data-id="{{video.id}}" class="play-icon" />
+      <image class="image" src="{{video.litpic}}" />
+      <view class="text">
+        <text class="title">{{video.title}}</text>
+        <text class="topic">{{video.tag}}</text>
+      </view>
+      <view class="desc">
+        {{video.description}}
+      </view>
+    </view>
   </view>
   <video id="video" class="video" style="display: {{videoDisplay}}; top: {{coverTop}}px" src="{{currentUrl}}" />
-
-  <!--<text class="desc-text" wx:for="{{videos}}" wx:for-item="video">{{video.desc}}</text>-->
 </view>
